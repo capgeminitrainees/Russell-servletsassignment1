@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style/styling.css">
+<script src="script/jsfile.js"></script>
+<body>
+<h1> Login Page</h1>
+<form method="post" action="LoginServlet" onsubmit="return validate()">
+
+<table>
+<tr>
+<td> Name</td>
+<td><input type="text" name = "userName" id="userName"></td>
+<td><div id="errName"></div></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name = "userPassword" id="userPassword"></td>
+<td><div id="errPassword"></div></td>
+</tr>
+
+</table>
+<input type="submit">
+</form>
+</body>
+</html>

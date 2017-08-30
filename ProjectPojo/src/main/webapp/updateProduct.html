@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Product page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style/styling.css">
+<script src="script/jsvalid.js"></script>
+
+<body>
+<form method="post" action="updatingServerServlet" onsubmit="return validate()">
+
+<div>
+<table>
+<tr>
+<td>Product Name</td>
+<td><input type="text" id ="productName" name = "productName"></td>
+<td><div id="prodNameDiv"></div></td>
+</tr>
+<tr>
+<td>Product Type</td>
+<td><select id="prodType" name="prodType" ><option label="mobile" value="mobile"></option><option label="TV" value="TV"></option></select></td>
+<td><div id="prodTypeDiv"></div></td>
+</tr>
+<tr>
+<td>Expiry Date</td>
+<td><input type="date" id="expiryDate" name = "expiryDate"></td>
+<td><div id="expiryDateDiv"></div></td>
+</tr>
+<tr>
+<td>Description</td>
+<td><textarea name = "description" id="description" rows="5" cols="20"></textarea></td>
+<td><div id="descriptionDiv"></div></td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td><input type="number" id="quantity" name="quantity"></td>
+<td><div id="quantityDiv"></div></td>
+</tr>
+<tr>
+<td>Price</td>
+<td><input type="number" id="price" name="price"></td>
+<td><div id="priceDiv"></div></td>
+</tr>
+</table>
+<input type="submit" value="Update" >
+<input type="reset" value="Clear">
+
+</div>
+</form>
+
+</body>
+
+</html>
